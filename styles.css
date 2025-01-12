@@ -49,6 +49,34 @@
   font-style: normal;
 }
 
+body {
+  background-color: var(--Stone-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    padding: 100px 50px;
+  }
+  .container {
+    max-width: 650px;
+    border-radius: 20px;
+    padding: 2rem;
+  }
+  .recipe-main-img {
+    border-radius: 10px;
+  }
+  main {
+    margin: 2rem 0 2rem 0 !important;
+  }
+}
+
+.container {
+  background-color: var(--white);
+}
+
 /* Header */
 .recipe-main-img {
   width: 100%;
@@ -147,8 +175,12 @@ table.nutrition-table tbody {
   width: 50%;
 }
 
-table.nutrition-table thead {
-  margin-left: 2rem;
+table.nutrition-table thead tr th {
+  padding-left: 2rem;
+}
+
+table.nutrition-table tbody tr td {
+  padding-left: 10px;
 }
 
 table.nutrition-table tr {
